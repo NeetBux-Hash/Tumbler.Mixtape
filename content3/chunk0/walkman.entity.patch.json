@@ -1,0 +1,168 @@
+{
+	"tempHash": "00D347CBA29EE6BA",
+	"tbluHash": "000A263E54999100",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafec179e98a3ba9",
+				{
+					"parent": "158cb860b1fce56d",
+					"name": "Add Weapon",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe1505791a550b",
+				{
+					"parent": "cafec179e98a3ba9",
+					"name": "GameEventListener",
+					"factory": "[modules:/zgameeventlistenerentity.class].pc_entitytype",
+					"blueprint": "[modules:/zgameeventlistenerentity.class].pc_entityblueprint",
+					"properties": {
+						"m_eEvent": {
+							"type": "EGameEventType",
+							"value": "GET_IntroCutEnd"
+						}
+					},
+					"events": {
+						"EventOccurred": { "Poll": ["cafe670b690f2446"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe670b690f2446",
+				{
+					"parent": "cafec179e98a3ba9",
+					"name": "Avoid Dupe",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe7875df53e395"
+						}
+					},
+					"events": {
+						"PollFalse": { "SpawnItem": ["cafe7378381a3a9e"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe73f9fe371ea7",
+				{
+					"parent": "cafec179e98a3ba9",
+					"name": "HeroItemCondition",
+					"factory": "[modules:/zheroitemcondition.class].pc_entitytype",
+					"blueprint": "[modules:/zheroitemcondition.class].pc_entityblueprint",
+					"properties": {
+						"m_bCheckEquippedItem": {
+							"type": "bool",
+							"value": false
+						},
+						"m_bCheckInventory": {
+							"type": "bool",
+							"value": true
+						},
+						"m_ItemKeyToFind": {
+							"type": "SEntityTemplateReference",
+							"value": "cafed6e45281f292",
+							"postInit": true
+						}
+					},
+					"events": {
+						"OnTrue": { "SetTrue": ["cafe7875df53e395"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7875df53e395",
+				{
+					"parent": "cafec179e98a3ba9",
+					"name": "Item Present OR Absent",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7378381a3a9e",
+				{
+					"parent": "cafec179e98a3ba9",
+					"name": "ItemSpawner",
+					"factory": "[modules:/zitemspawner.class].pc_entitytype",
+					"blueprint": "[modules:/zitemspawner.class].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": { "x": 0, "y": 0, "z": 0 },
+								"position": {
+									"x": 81.0267562866211,
+									"y": -218.77810668945312,
+									"z": 15.957030296325684
+								}
+							}
+						},
+						"m_rMainItemKey": {
+							"type": "SEntityTemplateReference",
+							"value": "cafed6e45281f292"
+						},
+						"m_bSpawnOnStart": {
+							"type": "bool",
+							"value": false
+						},
+						"m_eRoomBehaviour": {
+							"type": "ZSpatialEntity.ERoomBehaviour",
+							"value": "ROOM_STATIC"
+						}
+					},
+					"events": {
+						"Item": { "SetItem": ["cafec15495c9e837"] },
+						"ItemReady": {
+							"PickupIntoPocket": ["cafec15495c9e837"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafed6e45281f292",
+				{
+					"parent": "cafec179e98a3ba9",
+					"name": "Don't Use On Level",
+					"factory": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
+					"blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
+					"properties": {
+						"m_RepositoryId": {
+							"type": "ZGuid",
+							"value": "2880296a-1014-4147-828a-80d82d4404fe"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafec15495c9e837",
+				{
+					"parent": "cafec179e98a3ba9",
+					"name": "HeroItemAction",
+					"factory": "[modules:/zheroitemaction.class].pc_entitytype",
+					"blueprint": "[modules:/zheroitemaction.class].pc_entityblueprint"
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}
