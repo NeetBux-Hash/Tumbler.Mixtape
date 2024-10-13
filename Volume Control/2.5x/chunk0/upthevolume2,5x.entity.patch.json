@@ -6,10 +6,7 @@
 			"SubEntityOperation": [
 				"e4c453472bfcde3e",
 				{
-					"AddProperty": [
-						"m_fRange",
-						{ "type": "float32", "value": 25 }
-					]
+					"AddProperty": ["m_fRange", { "type": "float32", "value": 25 }]
 				}
 			]
 		}
