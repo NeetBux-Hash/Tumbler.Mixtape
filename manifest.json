@@ -7,5 +7,15 @@
 	"authors": ["Tumbler"],
 	"frameworkVersion": "2.33.20",
 	"updateCheck": "https://github.com/NeetBux-Hash/Tumbler.Mixtape/releases/latest/download/updates.json",
-	"contentFolders": ["content"]
+	"contentFolders": ["content"],
+	"options": [
+		{
+			"name": "Legal Mixtape",
+			"contentFolders": ["content2"],
+			"type": "checkbox",
+			"enabledByDefault": false,
+			"tooltip": "Now makes the mixtape a legal item to hold and carry. Note: NPCs still react to it as a weapon by fetching a guard. Offline and Peacock only"
+		}
+		
+	]
 }
