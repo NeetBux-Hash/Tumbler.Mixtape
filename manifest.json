@@ -21,7 +21,7 @@
 			"name": "Walkman 47",
 			"contentFolders": ["content3"],
 			"type": "checkbox",
-			"image": "spawn.gif",
+			"image": "leaks/spawn.gif",
 			"enabledByDefault": false,
 			"tooltip": "Now makes the mixtape a definite item in your inventory just like the camera. Note: Checking this option will prevent the spawning from the mixtape in the safhouse so check your pockets."
 		},
@@ -32,7 +32,7 @@
 			"group": "Speaker Boost",
 			"type": "select",
 			"contentFolders": [],
-			"image": "0.gif",
+			"image": "leaks/0.gif",
 			"enabledByDefault": true
 			},
 		
@@ -42,7 +42,7 @@
 			"group": "Speaker Boost",
 			"type": "select",
 			"contentFolders": ["Volume Control/2x"],
-			"image": "200.gif",
+			"image": "leaks/200.gif",
 			"enabledByDefault": false
 			},
 				{
@@ -50,7 +50,7 @@
 			"tooltip": "The Mixtape audio is double and a half the range. Start counting",
 			"group": "Speaker Boost",
 			"type": "select",
-			"image": "250.gif",
+			"image": "leaks/250.gif",
 			"contentFolders": ["Volume Control/2.5x"],
 			"enabledByDefault": false
 			},
@@ -61,7 +61,7 @@
 			"tooltip": "The Mixtape audio is triple the range",
 			"group": "Speaker Boost",
 			"type": "select",
-			"image": "300.gif",
+			"image": "leaks/300.gif",
 			"contentFolders": ["Volume Control/3x"],
 			"enabledByDefault": false
 			},
@@ -70,7 +70,7 @@
 			"tooltip": "The Mixtape audio is now quadruple the range.",
 			"group": "Speaker Boost",
 			"type": "select",
-			"image": "400.gif",
+			"image": "leaks/400.gif",
 			"contentFolders": ["Volume Control/4x"],
 			"enabledByDefault": false
 			}
