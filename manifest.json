@@ -5,5 +5,6 @@
 	"name": "Mixtape in Safehouse",
 	"description": "Spawns the mixtape to the supplier desk",
 	"authors": ["Tumbler"],
-	"frameworkVersion": "2.25.1"
+	"frameworkVersion": "2.25.1",
+	"contentFolders": ["content"]
 }
