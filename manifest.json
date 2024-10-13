@@ -2,8 +2,8 @@
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
 	"version": "1.2.0",
 	"id": "Tumbler.MixtapeSpawn",
-	"name": "Mixtape in Safehouse",
-	"description": "Spawns the mixtape to the supplier desk",
+	"name": "Mixtape in Freelancer Safehouse",
+	"description": "Spawns the mixtape on the supplier desk",
 	"authors": ["Tumbler"],
 	"frameworkVersion": "2.33.20",
 	"updateCheck": "https://github.com/NeetBux-Hash/Tumbler.Mixtape/releases/latest/download/updates.json",
@@ -23,7 +23,7 @@
 			"type": "checkbox",
 			"image": "leaks/spawn.gif",
 			"enabledByDefault": false,
-			"tooltip": "Now makes the mixtape a definite item in your inventory just like the camera. Note: Checking this option will prevent the spawning from the mixtape in the safhouse so check your pockets."
+			"tooltip": "Now makes the mixtape a definite item in your inventory just like the camera. Note: Checking this option will remove it from the desk spawn. Check your inventory."
 		},
 
 		{
