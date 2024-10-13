@@ -22,6 +22,50 @@
 			"type": "checkbox",
 			"enabledByDefault": false,
 			"tooltip": "Now makes the mixtape a definite item in your inventory just like the camera. Note: Checking this option will prevent the spawning from the mixtape in the safhouse so check your pockets."
-		}
+		},
+
+		{
+			"name":	"No Boost",
+			"tooltip": "The Mixtape audio range stays default",
+			"group": "Speaker Boost",
+			"type": "select",
+			"contentFolders": [],
+			"enabledByDefault": true
+			},
+		
+			{
+			"name":	"200% Volume",
+			"tooltip": "The Mixtape audio is now double the range. Roughly 10 meters",
+			"group": "Speaker Boost",
+			"type": "select",
+			"contentFolders": ["Volume Control/2x"],
+			"enabledByDefault": false
+			},
+				{
+			"name":	"250% Volume",
+			"tooltip": "The Mixtape audio is double and a half the range. Start counting",
+			"group": "Speaker Boost",
+			"type": "select",
+			"contentFolders": ["Volume Control/2.5x"],
+			"enabledByDefault": false
+			},
+		
+			
+				{
+			"name":	"300% Volume",
+			"tooltip": "The Mixtape audio is triple the range",
+			"group": "Speaker Boost",
+			"type": "select",
+			"contentFolders": ["Volume Control/3x"],
+			"enabledByDefault": false
+			},
+				{
+			"name":	"400% Volume",
+			"tooltip": "The Mixtape audio is now quadruple the range.",
+			"group": "Speaker Boost",
+			"type": "select",
+			"contentFolders": ["Volume Control/4x"],
+			"enabledByDefault": false
+			}
 	]
 }
