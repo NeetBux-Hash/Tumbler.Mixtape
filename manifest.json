@@ -1,10 +1,11 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"id": "Tumbler.MixtapeSpawn",
 	"name": "Mixtape in Safehouse",
 	"description": "Spawns the mixtape to the supplier desk",
 	"authors": ["Tumbler"],
-	"frameworkVersion": "2.25.1",
+	"frameworkVersion": "2.33.20",
+	"updateCheck": "https://github.com/NeetBux-Hash/Tumbler.Mixtape/releases/latest/download/updates.json",
 	"contentFolders": ["content"]
 }
