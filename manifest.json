@@ -7,4 +7,5 @@
 	"authors": ["Tumbler"],
 	"frameworkVersion": "2.33.20",
 	"updateCheck": "https://github.com/NeetBux-Hash/Tumbler.Mixtape/releases/latest/download/updates.json"
+  "contentFolders": ["content"]
 }
