@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"id": "Tumbler.MixtapeSpawn",
 	"name": "Mixtape in Safehouse",
 	"description": "Spawns the mixtape to the supplier desk",
@@ -16,7 +16,6 @@
 			"enabledByDefault": false,
 			"tooltip": "Now makes the mixtape a legal item to hold and carry. Note: NPCs still react to it as a weapon by fetching a guard. Offline and Peacock only"
 		},
-
 		{
 			"name": "Walkman 47",
 			"contentFolders": ["content3"],
