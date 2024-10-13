@@ -7,10 +7,7 @@
 			"SubEntityOperation": [
 				"eb19d3dea3ff521d",
 				{
-					"RemoveAllEventConnectionsForTrigger": [
-						"OnThrown",
-						"Trigger"
-					]
+					"RemoveAllEventConnectionsForTrigger": ["OnThrown", "Trigger"]
 				}
 			]
 		},
