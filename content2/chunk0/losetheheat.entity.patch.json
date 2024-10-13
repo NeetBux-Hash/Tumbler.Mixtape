@@ -1,0 +1,44 @@
+{
+	"tempHash": "0063C1455333F6C0",
+	"tbluHash": "00BEA0495C64F3BB",
+	"patch": [
+		{ "RemoveEntityByID": "d12caa96ccbd0503" },
+		{
+			"SubEntityOperation": [
+				"eb19d3dea3ff521d",
+				{
+					"RemoveAllEventConnectionsForTrigger": [
+						"OnThrown",
+						"Trigger"
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeeba6b9b33595",
+				{
+					"parent": "dc24e5d6a3470ddd",
+					"name": "keyword_ITEMRULE_LEGAL",
+					"factory": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_itemrule_legal.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_itemrule_legal.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_aHolders": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["646d037519441bf9"],
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddComment": {
+				"parent": "d12caa96ccbd0503",
+				"name": "Notes",
+				"text": "Removal of entity;\n{\n\t\"parent\": \"dc24e5d6a3470ddd\",\n\t\"name\": \"IllegalActionEntity\",\n\t\"factory\": \"[modules:/zillegalactionentity.class].pc_entitytype\",\n\t\"blueprint\": \"[modules:/zillegalactionentity.class].pc_entityblueprint\",\n\t\"properties\": {\n\t\t\"m_bIsIllegal\": {\n\t\t\t\"type\": \"bool\",\n\t\t\t\"value\": false\n\t\t},\n\t\t\"m_bIsSevere\": {\n\t\t\t\"type\": \"bool\",\n\t\t\t\"value\": false\n\t\t}\n\t}\n}"
+			}
+		}
+	],
+	"patchVersion": 6
+}
