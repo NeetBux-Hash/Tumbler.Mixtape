@@ -6,4 +6,4 @@ Spawns the mixtape on the supplier desk
 
 ---
 
-`Tumbler.MixtapeSpawn` v1.4.0, by Tumbler. This README was automatically generated from the mod's manifest.
+`Tumbler.MixtapeSpawn` v1.5.0, by Tumbler. This README was automatically generated from the mod's manifest.
