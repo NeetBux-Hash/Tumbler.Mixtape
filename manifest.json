@@ -69,6 +69,33 @@
 			"image": "leaks/400.gif",
 			"contentFolders": ["Volume Control/4x"],
 			"enabledByDefault": false
+		},
+		{
+			"name": "600% Volume",
+			"tooltip": "The Mixtape audio is now 6 times the range. Range visualization is impossible to be displayed properly now",
+			"group": "Speaker Boost",
+			"type": "select",
+			
+			"contentFolders": ["Volume Control/6x"],
+			"enabledByDefault": false
+		},
+		{
+			"name": "800% Volume",
+			"tooltip": "The Mixtape audio is now 8 times the range.",
+			"group": "Speaker Boost",
+			"type": "select",
+			
+			"contentFolders": ["Volume Control/8x"],
+			"enabledByDefault": false
+		},
+		{
+			"name": "1000% Volume",
+			"tooltip": "The Mixtape audio is now 10 times the range.",
+			"group": "Speaker Boost",
+			"type": "select",
+			
+			"contentFolders": ["Volume Control/10x"],
+			"enabledByDefault": false
 		}
 	],
 	"thumbs": ["ConsoleCmd OnlineResources_Disable 1"]
