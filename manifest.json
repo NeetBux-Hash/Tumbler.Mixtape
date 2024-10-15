@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "1.5.0",
+	"version": "1.5.1",
 	"id": "Tumbler.MixtapeSpawn",
 	"name": "Mixtape in Freelancer Safehouse",
 	"description": "Spawns the mixtape on the supplier desk",
