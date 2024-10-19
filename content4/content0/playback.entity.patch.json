@@ -1,0 +1,30 @@
+{
+	"tempHash": "0063C1455333F6C0",
+	"tbluHash": "00BEA0495C64F3BB",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"ec5342a23ae8d511",
+				{
+					"RemoveAllEventConnectionsForTrigger": [
+						"Out",
+						"StopAudioDistraction"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"ec5342a23ae8d511",
+				{
+					"AddEventConnection": [
+						"Out",
+						"TriggerPayload",
+						"ca3c44bfe599a86d"
+					]
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}
